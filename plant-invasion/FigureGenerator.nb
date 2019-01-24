@@ -1,0 +1,1467 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     84503,       1459]
+NotebookOptionsPosition[     83953,       1439]
+NotebookOutlinePosition[     84297,       1454]
+CellTagsIndexPosition[     84254,       1451]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"name", "=", "\"\<2species-env-circle-1\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"NotebookDirectory", "[", "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"<<", "\"\<DisplayLibrary.wl\>\""}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", " ", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"name", "<>", "\"\<.dat\>\""}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"mPlotPlants", "[", "data", "]"}], "\n", 
+ RowBox[{"g", "=", 
+  RowBox[{"mPlantGrid", "[", 
+   RowBox[{"data", ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "4", ",", "7", ",", "10"}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Export", "[", 
+   RowBox[{
+    RowBox[{"name", "<>", "\"\<.png\>\""}], ",", "g"}], "]"}], 
+  ";"}]}], "Input",
+ CellChangeTimes->{{3.7022983479275084`*^9, 3.702298394928486*^9}, {
+   3.7022988823197765`*^9, 3.7022989119115815`*^9}, {3.702299339555107*^9, 
+   3.702299341479537*^9}, 3.7023028603835516`*^9, {3.702312479493411*^9, 
+   3.702312485326021*^9}, {3.7023188557796183`*^9, 3.7023189356439095`*^9}, {
+   3.7023198306600637`*^9, 3.702319831097598*^9}, {3.702319903875325*^9, 
+   3.702319931740664*^9}, {3.7023199766900787`*^9, 3.7023200068747883`*^9}, {
+   3.7023200400248137`*^9, 3.702320043487073*^9}, {3.702320096575401*^9, 
+   3.7023201040795746`*^9}, {3.7023230714528184`*^9, 
+   3.7023230716980686`*^9}, {3.70232747421721*^9, 3.702327506134811*^9}, 
+   3.702328496591981*^9, {3.7023808128977633`*^9, 3.7023808873068514`*^9}, {
+   3.702381809418671*^9, 3.7023818180899305`*^9}, {3.702382010946124*^9, 
+   3.702382031281618*^9}, {3.7023821698750525`*^9, 
+   3.702382186653904*^9}},ExpressionUUID->"36e6128a-656e-442a-9415-\
+0a3ba0ffa6c8"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`i108$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {
+    "\"min\"" :> {$CellContext`i108$$ = 1}, 
+     "\"max\"" :> {$CellContext`i108$$ = 16}}, Typeset`bookmarkMode$$ = 
+    "Menu", Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`i108$$], 1, ""}, 1, 16, 1}}, Typeset`size$$ = 
+    Automatic, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`i108$31594$$ = 0}, 
+    PaneBox[
+     PanelBox[
+      DynamicWrapperBox[GridBox[{
+         {
+          ItemBox[
+           ItemBox[
+            TagBox[
+             StyleBox[GridBox[{
+                {"\<\"\"\>", 
+                 AnimatorBox[Dynamic[$CellContext`i108$$], {1, 16, 1},
+                  AnimationRate->Automatic,
+                  AnimationRunTime->0.,
+                  AnimationRunning->False,
+                  AnimationTimeIndex->0.,
+                  
+                  AppearanceElements->{
+                   "ProgressSlider", "PlayPauseButton", "FasterSlowerButtons",
+                     "DirectionButton"},
+                  AutoAction->False,
+                  DisplayAllSteps->True]}
+               },
+               AutoDelete->False,
+               
+               GridBoxAlignment->{
+                "Columns" -> {Right, {Left}}, "ColumnsIndexed" -> {}, 
+                 "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
+               
+               GridBoxItemSize->{
+                "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+              "ListAnimateLabel",
+              StripOnInput->False],
+             {"ControlArea", Top}],
+            Alignment->{Automatic, Inherited},
+            StripOnInput->False],
+           Background->None,
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            StyleBox[
+             PaneBox[
+              TagBox[
+               PaneSelectorBox[{1->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztz9EJwlAMhtGCkziDA7iDIwg+u7ojiGgQgkGQanrr+aCcm7e/2+P5cNpM
+07R7fLf3vcueJEmSJEmS5NKNqpvk/xpVN0mSJNdtrnvP6DtHMde9hyRJkiRJ
+kiQ5hlF1kyRJLs1c9x6SJEmSJEmS8xtVN0mSJEmSJEmSJEmSJPlLc917SPJf
+jKqbJDm9rHsPSZIkSZIkSZIkSZIkyfdG1U2SJFmZ695DkiRJkiQ5urnuPaOY
+695DcjnmuveQJEmSJJdlVN0kSZJch7nuPd/+z+omSZKfG1U3SZKc36i6SfLp
+FU8W5gI=
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 2->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1O2N1EAMBuBIVEINFEAPlIDEb1qnBITA0q11vk1IMp5kn1c6PevcyON8
+fv7+89uPT8uyfPn39+f33/z6Opd5rlnnJEmSnM1IVa9dv7UPSR5lpKrXrj+q
+z1nnd1Z/kue9t2d/H64+Z0739SC5/r2tanIGc7rn4bWNVPXoPiTvZ6Sq72pO
+9zxXN+dq/ckzzJl1nir5/93zkxz/vfAd4Bpzuuch36aq9z7nR/fn8m665yHp
+fXe+JEkyG6nq0X1IXt+cUfs92//oec7uT5JbjVQ1yeua0z3PUefz7PxyTZJn
+GalqkuT7RqqaJM8yUtVr13f1IcmtRqp673qSPMpIVd9tX5LzGPEdIEneyZxR
++1U1yeua091n635VPZs53fOQnNdIVe9dT3I+c54dn8Vq3u7rRvL+Rqp69v4k
++8wxz765q5ok1xqp6tHrSbIykuvq+Oi5Ru/Laxjpej5J8m5Gqpok72akqkmS
+JK9qJNfV8aP6d583Sa41UtUkt79Pke55+L6RqibPMOfZcfYY+d/7luvRc3Zf
+P17LnO55eK6Rqt67nnOY0z0PSb6aOd37bp2na36S1zPyrM7HSXKvkWd1Pr61
+D0mONlLVJO9jZPT7vnXfs9dzecje63ZUH97byCzPSdc8XftyeYj7ziONzHJ/
+u+bp2jfvN3rf2a9n1eeo/ryHEc/Dx+Z0z0Pe2UhV713P5SGu2zFG9l7Pqs9R
+/fmaRl7tuarO89WNjL7vXfvyYyPuC3v8DT430P0=
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 3->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztldGtVDEMRFeiEmqgAHqgBCS+aZ0SEAJ/rHneu861M5NkRkIH/O5zJokz
+fP7+89uPT4/H48u/P3/+/le/vtbQ9/Pqqlf5rDoHURT5afL/Zqtn/aPPVayl
+F9qPyEXT1byw1qv2hb6H0+iF9iNy0cSSM9l69770jsSP6IX2czpNLLmUrWfn
+7apP9F12nrN9xDF6rdZfrKGJJX+q+0fq6p/dF/r+xceHQvsRuWi6mxtV9Sr/
+o/Of9b06q/YV9amqi3vSxJ4zo/nT/Y66/FT1EZ/phfYjYmgaffdX9dF3HfV9
+d56r+7O9r+7+3eui/ItcNHXlCVs9m1fZPqN5uOs7zfrPfq/8FEdoYsmlqN7t
+v2rOR/t3v+tsfdfcE/egV1SPfl6VJ6O+u/MK9X5X52n7Ffek6Wqu0fWsf73f
+e/RC+xHFVzS9myfZOtu6eqfP9EL7EfegF6q//3n0e+h61j/6fledB1HspFd1
+X5b8QflZjdE+RZGZkWbnQHe9O/fQ9yiKO9Gr+vu7OdCdJ2x19DyI4ok0zX6P
+0bq71tH3LIon0nT3PUZ92Ops5yaKYl/OVPU5rY6+59G5iPZzd1+RuuYQfZ7Z
+cxZ7aVK+5eos9zbbTyS2XIr8ieIrmlhyprs+651GPrLfd9Wjn68yP+i8Fdeg
+iWU+q/yz5lj1vqv9+37oOvp9iGvQxD6fVX1m5Qmq3pWHXX5H111tTk6hif38
+sz5X2dfqeRX9XtV+7/odrWfPQRTF/4XKt+jnq+RPVL/yzdIfPYei2EEv9LqR
+WPKqqp7NpdXuV8TQdHd+qvqw5Ul1n3f73+03q96dw+g5EXM0dd1j1L+qjj6/
+qnP2Qufe6vl21z96XsS1adp1nqP1UH3e7e/XmVVH5Srr/Ig5mljuq8pPtk+2
+P2sudZ0zW737HNDvUqyhafYcsq172ruI/FftK9u/at1d6IX2w0KTcqZ3XTZG
++4rqbH2q+qPvQeylqSs3sv2rvq/yszqj/Ub17ntBn8eu9EL76cqf7u9R76i7
+jr7nU+ZZfKYX2k/3PmfnTHedzT/6nkUsvdA5g1p3do6p/rqePU/0PXfPefZ7
+8TW9Zp1zd3/2fNs1J9H3IHIyUnZ+ot/vzp+qdVno9zG6r6hPVb1q3apz6P5e
+fKYX+l1EfiLdnU+282Gj37f/N8v77e5T1V98j16rzXnWf6RTcsz7ivxW+8/2
+z/qs8l/ls+p78TVNXXM16x4jzX6no++N/X7Z3m/UB+XnNJq6zi3qn62j1q32
+Gal7zqP12On9XvmPvs/W2XKmyv/qzO43+r6qvkouddfRc8FOE/s5o9ZdnSbl
+Rk29aj6z31/5y35f1YdlbrvrqPcl1tLUdb9VdTY/VfXT3lF2X9n6aee5K02z
+7zfbB1Xv9h99l/VT3YeFkf9d6+jzZqeJ5f2qPlafPS+z1+3+/4J9nrM+0bly
+ei6h/IzOSaS7c4VadxVm9xt9v0odfd6r0lT13llyCZX/qHu52s/s/t3nkPXP
+1mfWPJxC06r5kF232k/Ul42ReN/Fb2/TfXs=
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 4->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztlu3NFDEMhE+iEmqgAHqgBCR+0zolICQiscvlzdc4M96MJTTsg3G8G2dy
+n7///Pbj0+v1+vL3z5+/X+PX1/+QOZCX57uO5p+q99hVP3pdK0ZLqJz3LDz6
+e6L2kT1f2f3NmkNLqPjDUzlrv1Tmq7fv7OtaOVpC5byfxkf35SnncbT/0fzo
+OlYtLaFyrp/KZ/1qNZ+t98hW35pDS6ic9yyc7Uu1yOJvo740yrOsa8VoCRV/
+UOOouuh6q76H9tVof6jx1fdlr2vFaAkV33gqR/nbaB22X0Wfd9a61hxaQsUH
+WDz6+8z6TK0u6/zW6qPWHa2P4vbDHFqCPS+n8lpeK5/lA9G+Zx+zzmgJ9ryY
+v3/u3a9d567VdxRH9cPyYWuslmDPqXkf33Uea1xNs/dvxWgJlXNqfn3u3S/2
+HKn5DGtdK1drsXq+zLl817me7a93XVZ9VL6VoyVUzqP59Xl1v9jvg/JJq/Uj
+LcGed/M+HrX/q/VRdazWGS2hck7N93D23GX1w3tfrT5H860fawmVc2SO5ap+
+0lvn/u+78kfrsL+n9fVhqJxH8z189nyh8mux2+ej66Pel+0bKlpC5RyZYznq
+XmP5W+/62TjqnLL9Q0VLjPqa/TA3R/tSFN+1jjqP9jdUHTUfMz+To/yE5WOe
+8+vz6VrCc/JMrtLHLGevr86jz7uajvY/mm/f0+S9+8Pqr/Xvnqs5zvYbFS3h
+ucrBVfqY5ez1n8ZR94X1dQmV/c3Ce78rq79dnL3+0zjbD1T8B+VX9r3r8+r3
+V3mfWc5e/xSOnjd1rb0Xij/Vx9j3QitPlbPXfxqP9gG2P0X1X8uP5mr9sHgr
+r/Wdovtr9bN7/VP56Dyg6qj5Empdcyxn9THaz66+zN/z6N8/T9USKvtofn1e
+vU9b9Wuh8h1O47P7eLqWUNlH8+tz1H7Zx3Jxtk+oawmV/TqN9+5Pq26rfm++
++RxHnS/UPKz6wWod+5L5v8/e9xx8l4+doiWivrP5Hu77Lhdv5bX2oZXfWnd2
+/1freN7MZ3gtr5XvuYrlaN8YzVevc/9/rTq1fPNncN+bc5x1Tmf7HO1ndr3V
++vYx8xk+Oye1WM1ncdR5YZ0jtA+g+vM9aI7kqDnJPofZ+6/xaP/ZtS6qn6z7
+aL6Hq81VtD+j+lTrZ9Q3ZvNn741W/d73MNfm0b8r1Oqcxtk+VguUH/b6WO86
+5ubm53H076jV31e+78x7+OiceK6ewdG/l3Zr73uY5+Ted/MIvtufWuuO9m9+
+ffb3NGfy6Dmc9ZlaRPlha33z93z0e6rlm5tHcJQv2ce4HOU/3kdzZd7KW51b
+z78m9z1l/iTO8ivPOZajvqfvKfOMvJaHquM5n+PRvuR7x1yZs+Y/us5pPNpn
+7G/myjx6Plt9zOtvcs/xrA==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 5->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1uFNJDEMhuGVqIQaKIAeKAGJ37ROCQiJCAGTTZx8jj2TN9LJx6Mh8e06
+383j6/vL28Ptdnv6/vP199/r4/kf4Rf28nOtWve17mOtqn2o16xlZblfeKx7
+zVdvH6vmfbafqP6px7WsLPcIj/Us82jtu7f/bM9TNbWsLPcIj/XoeVTlnvc+
+qudV/e9ey8pyj/Bz+ap7fZb9qTG1rCz3Ate66ntfdd9bfWTx0Xs2uw/1uJYV
+PRf4WlffX1V/Z8+3mlN9a1nR3zOew61zkqVvL7fmKjWmlhU9L/haH72n+FiN
+OneXWlb0XOA5PPqeZnPvz4GqqWVFzwuew7P0cTWn+tayor9nPIf3zsvs81b3
+3t96rurzoWpqWVnuER7r0bkR5V65VDuf3NPWsqLnCPfxVfdrtL/Zc1X9eO1T
++z3v/NytlpXl3uE5PVs+1J7v3a93/9lcOks/0TlEjuEr3Jobs/PotX+W+R/N
+ea9cUu1DjuErfVXOjPbX8ta5u8y56t8bnUPkGL7CvfMHX+NRuUGO4RlcvS9z
+qPFsn6e1H3IMz+C8d+EzTo7hHt47L+o+1Pvt7t73XZU/5Bi+0lvP9c4VOXZt
+H50Hcgxf4byP4Uc/e+UPOYbPeJY+spyPa1yVe+QYnrGPlkefjx+7d560niPf
+8HuepY8s5+/i1hxQPc/7GD7jWfpoefT5uK+TY7iHq3KGvNrT1XNCjuH3POo9
+yjq36r7wXM77GL7SR/OKecPvOTmGz7hqHpira7v1/y/VPuQYjuNnd3IMx/Fs
+Pvo+Zj2PfMNxfDaXVPlDXuE4bnVrPkS9X5FjOI5bfVVe1Zy8wnE8S+71vk+N
+Pm/tE8fxfdz6+619rDnWuz+O47jKW3nlVVX94ziOq7z1HDmG4/js+1Xr+dqa
+zStyDMfxbG79fe9+cBzHaz763tV7nrUfHMdxlbdyrLd694nj+D5OzuA4vpuT
+eziOZ3NyCcfxq3rtuah+cBzHvZ3cw3Ecx3EcH/Py89+q3v9nfQLdvtZo
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 6->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1lGO0zAQBuBKnIQzcADuwBGQeObqHAEh4QdK3TTbiWdsf5ZWs/nqxpN1
+8m8+f//57cen2+325e/Pn9//Hb++/kecH3o7jqpn+4g6f9b8auvOWu+v+35w
+/sx7847mR+XYWZcna9Y2qjwXfA3Pzqssv/p61ce1jez953v4bDkQte7Zfs7O
+3722UeU+53N5dg7M7lF/t91rG9n7yffwUc91NT97XVHzd6ltZO8zr+29eUfz
+V82lLFcf1zay94fX9o8+X6P628XVx7WN7P3hc3qVPqr71Tm/e20je5/5nF6l
+jyo+6nkdvW712kb2/vMa3pt3dv6q3vs86jxH5x/9vGfnkxzjkf7qfZTVX7Rn
+r//uvkSdZ5bauy7O3/FR672bq73Pq+VbVD9XX5cc4yt5VC59dN1Xz1Mtr6p5
+VJ7IMT6jV+mjyvqz+tW5Icd4Bb86N9y3a/jV73VRfXLOeZR7H+Mj/er3Mc4f
+Hcsxznl1l1ecc865/5ucc84557P42e9f3Q/nnJ/1dtyrve/35lW5Ls75en71
+eqPW4Zzv63KMc76qyzHO+SwelUtyjHPOOeec8zru/ZxzzjnnnHPOOeecr+S9
+eUfzX61RfXLOeZS/mluj+uGcc84558/nZfXDOednvR3f16x+OOecc87583lZ
+/XDOOeec7+bt+L5m9cM555xzvpt7H+Occ84555xzzjnnnHPOOeecc845j/Lf
+NLfsSA==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 7->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1tFtwyAUBVBLnaQzdIDu0BEq9burd4SqUv1RV8jGvGdwOEgRyQnBDwWu
+eH7/fPt4Wpbl5ff18/5v+3r9R5xf5uvnUl/6fe34Wo+aP3tds/drG2U/8zm9
+df9m19fqvXKsdvxd++36to3zK3yUOkbx6POdNf8o/XZ928b5GR/1nO7VPbvf
+tT+6Ps4zvTSudvysnp3/o/fbdZTWx3mmj1LHXX32fm29/wc+h49SR6vvnaer
+6yn50fMelRtyjM/so9QR7aXvz46Pys+svDpbvxzjPf3sfr6qvqs9KmeOetR8
+2bkhx/gjees+3Xve3nNb59mbP+t8ZefY2Xqy1yvHeE/vlT+196Ws5zyKu49x
+Ps4+i6onuq7ZvTaX5Bi/o7tfcc5H86h7jhzjnHPOOeecc84555xzzjnnnHPO
+Oeecc84555xzzjnnnHPOeS8vjetVD+ecR7l845xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeect/s3OAgb+A==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 8->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1tEJwjAUBdCCkziDA7iDIwh+u7ojiKAfUkqT9CWN5hQk5rR9eYX2kuP1
+frkdpmk6vX+v/9/H4zwjzsP9M08do+r08vytvfa417qp7wnnPXurvIr6fvfq
+p7c+5Rjn83lvOZPrvfWT672MW5+D85q+dF1UnV/zqNyulQ9R9eUYH8FLv4tW
+/bXypfNR+b9Wv3XuyTHeg0flT+m6pfeneu5+aelonUu1Xf7wkb2XPlJ9a47l
+1kmtt7fLMT6yR+1bovZFuetG98U5/x8vzbfUsbROaj+cc7523dZciuqTcz6O
+289wzvn33P6Kc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnI/lT/sYkD8=
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 9->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1s0JwkAQBtAFK7EGC7AHSxBytnVLEMGLyJDsn4bxLYQsjzDMHPIxx+vt
+shxKKafX87y/n/v5gzhP43vpY5ZH7611ZvXV6mtzRXPupX/Oe7z2P23Nh9rc
+GFUnOltzYK3et3PpV/1wnslH594o791DsuZG1rk47/HaPGmtE53eXOWc88hH
+7UujcpJzns+z5oB9jHMe+ai9aPb3nHPOOeecc84555xzzjnnnHPOOeecc845
+55xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc845
+55xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc845
+55xzzjnnnHPOOeecc8455/zf/AGEfjsH
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 10->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJzt1sEJgDAMAMCAkziDA7iDIwi+Xd0RRPCjJSgq6uMCpeEIKf2E1P3YDVVE
+NOtZ8m1MbUGc85N+VLe/r/a/24dzzjPP6t5613zjnH81957a07L4y38555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnvPQZZroSyQ==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 11->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztyEEJACEURdEPJjGDAexgBMG11Y0gghuZBsN5cOFxcp9tpIgot/Pfrfoh
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xz/kvfGBsJUQ==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 12->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztzsEJgDAMBdCAkziDA7iDIwg9u3pHKIV6aDuAFl7g85N3yn4/V9oi4mip
+ez/5nIhzzn/l7z32V/9wzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc875ul4AOFMLrw==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 13->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztyEEJACEURdEPJjGDAexgBMG11Y0gghuZBsN5cOFxcp9tpIgot/Pfrfoh
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xz/kvfGBsJUQ==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 14->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztytEJgDAMBcBAJ3GGDuAOjiD0u6t3BCnoR80EhQs8XnLkuPvVSkTUN3Nf
+Z5yJOOecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnn
+nHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnn
+nHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnn
+nHPOOeecc84555xzzjnnnHPO+Ub+3f/O/w9oGQuv
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 15->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztyEEJACEURdEPJjGDAexgBMG11Y0gghuZBsN5cOFxcp9tpIgot/Pfrfoh
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xz/kvfGBsJUQ==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}], 16->
+                GraphicsBox[{RasterBox[CompressedData["
+1:eJztyEEJACEURdEPJjGDAexgBMG11Y0gghuZBsN5cOFxcp9tpIgot/Pfrfoh
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xz/kvfGBsJUQ==
+                   "], {{0, 0}, {51, 51}}, {0, 1}], {{
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 51}, {51, 51}}, {{0, 50}, {51, 50}}, {{0, 
+                    49}, {51, 49}}, {{0, 48}, {51, 48}}, {{0, 47}, {51, 
+                    47}}, {{0, 46}, {51, 46}}, {{0, 45}, {51, 45}}, {{0, 
+                    44}, {51, 44}}, {{0, 43}, {51, 43}}, {{0, 42}, {51, 
+                    42}}, {{0, 41}, {51, 41}}, {{0, 40}, {51, 40}}, {{0, 
+                    39}, {51, 39}}, {{0, 38}, {51, 38}}, {{0, 37}, {51, 
+                    37}}, {{0, 36}, {51, 36}}, {{0, 35}, {51, 35}}, {{0, 
+                    34}, {51, 34}}, {{0, 33}, {51, 33}}, {{0, 32}, {51, 
+                    32}}, {{0, 31}, {51, 31}}, {{0, 30}, {51, 30}}, {{0, 
+                    29}, {51, 29}}, {{0, 28}, {51, 28}}, {{0, 27}, {51, 
+                    27}}, {{0, 26}, {51, 26}}, {{0, 25}, {51, 25}}, {{0, 
+                    24}, {51, 24}}, {{0, 23}, {51, 23}}, {{0, 22}, {51, 
+                    22}}, {{0, 21}, {51, 21}}, {{0, 20}, {51, 20}}, {{0, 
+                    19}, {51, 19}}, {{0, 18}, {51, 18}}, {{0, 17}, {51, 
+                    17}}, {{0, 16}, {51, 16}}, {{0, 15}, {51, 15}}, {{0, 
+                    14}, {51, 14}}, {{0, 13}, {51, 13}}, {{0, 12}, {51, 
+                    12}}, {{0, 11}, {51, 11}}, {{0, 10}, {51, 10}}, {{0, 9}, {
+                    51, 9}}, {{0, 8}, {51, 8}}, {{0, 7}, {51, 7}}, {{0, 6}, {
+                    51, 6}}, {{0, 5}, {51, 5}}, {{0, 4}, {51, 4}}, {{0, 3}, {
+                    51, 3}}, {{0, 2}, {51, 2}}, {{0, 1}, {51, 1}}, {{0, 0}, {
+                    51, 0}}}],
+                    Antialiasing->False]}}, {
+                    {RGBColor[0.5, 0.5, 0.5], Opacity[0.2], 
+                    
+                    StyleBox[
+                    LineBox[{{{0, 0}, {0, 51}}, {{1, 0}, {1, 51}}, {{2, 0}, {
+                    2, 51}}, {{3, 0}, {3, 51}}, {{4, 0}, {4, 51}}, {{5, 0}, {
+                    5, 51}}, {{6, 0}, {6, 51}}, {{7, 0}, {7, 51}}, {{8, 0}, {
+                    8, 51}}, {{9, 0}, {9, 51}}, {{10, 0}, {10, 51}}, {{11, 
+                    0}, {11, 51}}, {{12, 0}, {12, 51}}, {{13, 0}, {13, 
+                    51}}, {{14, 0}, {14, 51}}, {{15, 0}, {15, 51}}, {{16, 
+                    0}, {16, 51}}, {{17, 0}, {17, 51}}, {{18, 0}, {18, 
+                    51}}, {{19, 0}, {19, 51}}, {{20, 0}, {20, 51}}, {{21, 
+                    0}, {21, 51}}, {{22, 0}, {22, 51}}, {{23, 0}, {23, 
+                    51}}, {{24, 0}, {24, 51}}, {{25, 0}, {25, 51}}, {{26, 
+                    0}, {26, 51}}, {{27, 0}, {27, 51}}, {{28, 0}, {28, 
+                    51}}, {{29, 0}, {29, 51}}, {{30, 0}, {30, 51}}, {{31, 
+                    0}, {31, 51}}, {{32, 0}, {32, 51}}, {{33, 0}, {33, 
+                    51}}, {{34, 0}, {34, 51}}, {{35, 0}, {35, 51}}, {{36, 
+                    0}, {36, 51}}, {{37, 0}, {37, 51}}, {{38, 0}, {38, 
+                    51}}, {{39, 0}, {39, 51}}, {{40, 0}, {40, 51}}, {{41, 
+                    0}, {41, 51}}, {{42, 0}, {42, 51}}, {{43, 0}, {43, 
+                    51}}, {{44, 0}, {44, 51}}, {{45, 0}, {45, 51}}, {{46, 
+                    0}, {46, 51}}, {{47, 0}, {47, 51}}, {{48, 0}, {48, 
+                    51}}, {{49, 0}, {49, 51}}, {{50, 0}, {50, 51}}, {{51, 
+                    0}, {51, 51}}}],
+                    Antialiasing->False]}}}},
+                 Frame->False,
+                 FrameLabel->{None, None},
+                 FrameTicks->{{None, None}, {None, None}},
+                 GridLinesStyle->Directive[
+                   GrayLevel[0.5, 0.4]],
+                 
+                 Method->{
+                  "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+                   Automatic}]}, Dynamic[$CellContext`i108$$],
+                Alignment->Automatic,
+                BaseStyle->"ListAnimateCore",
+                ImageSize->All,
+                TransitionDirection->Horizontal,
+                TransitionDuration->0.5,
+                TransitionEffect->Automatic],
+               Identity,
+               Editable->True,
+               Selectable->True],
+              ImageMargins->10],
+             Deployed->False,
+             StripOnInput->False,
+             ScriptLevel->0,
+             GraphicsBoxOptions->{PreserveImageOptions->True},
+             Graphics3DBoxOptions->{PreserveImageOptions->True}],
+            Identity,
+            Editable->False,
+            Selectable->False],
+           Alignment->{Left, Center},
+           Background->GrayLevel[1],
+           Frame->1,
+           FrameStyle->GrayLevel[0, 0.2],
+           ItemSize->Automatic,
+           StripOnInput->False]}
+        },
+        AutoDelete->False,
+        GridBoxAlignment->{
+         "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Top}}, 
+          "RowsIndexed" -> {}},
+        GridBoxDividers->{
+         "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+          "RowsIndexed" -> {}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {
+            Offset[0.7], {
+             Offset[0.5599999999999999]}, 
+            Offset[0.7]}, "ColumnsIndexed" -> {}, "Rows" -> {
+            Offset[0.4], {
+             Offset[0.8]}, 
+            Offset[0.4]}, "RowsIndexed" -> {}}], If[
+        And[
+         CurrentValue["NotebookSelected"], 
+         CurrentValue["SelectionOver"]], 
+        Manipulate`Dump`ReadControllerState[
+         Map[Manipulate`Dump`updateOneVar[#, 
+           CurrentValue["PreviousFormatTime"], 
+           CurrentValue["CurrentFormatTime"]]& , {
+           
+           Manipulate`Dump`controllerLink[{$CellContext`i108$$, \
+$CellContext`i108$31594$$}, "X1", 
+            If["DefaultAbsolute", True, "JB1"], False, {1, 16, 1}, 16, 1.]}], 
+         CurrentValue[{
+          "ControllerData", {
+           "Gamepad", "Joystick", "Multi-Axis Controller"}}], {}]],
+       ImageSizeCache->{393., {206.25, 212.25}}],
+      DefaultBaseStyle->{},
+      FrameMargins->{{5, 5}, {5, 5}}],
+     BaselinePosition->Automatic,
+     ImageMargins->0],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "ListAnimate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.7022996033843513`*^9, 3.7022996122688704`*^9}, {
+   3.7023125490711317`*^9, 3.702312584041503*^9}, {3.7023189087990503`*^9, 
+   3.7023189186102395`*^9}, {3.7023199117217245`*^9, 
+   3.7023199434665794`*^9}, {3.7023199775537767`*^9, 3.702320022138399*^9}, 
+   3.7023230731856465`*^9, {3.7023274775956335`*^9, 3.7023275077393336`*^9}, 
+   3.702328498927661*^9, {3.7023808215341053`*^9, 3.702380891144529*^9}, {
+   3.702381811429572*^9, 3.7023818187475705`*^9}, {3.702382012523608*^9, 
+   3.7023820323566213`*^9}, {3.702382171534941*^9, 3.702382187997574*^9}, 
+   3.7023824808148236`*^9},ExpressionUUID->"85a84ba5-fba0-4b5a-b2cd-\
+9f1a0502996e"],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {{InsetBox[
+      GraphicsBox[RasterBox[CompressedData["
+1:eJztz9EJwlAMhtGCkziDA7iDIwg+u7ojiGgQgkGQanrr+aCcm7e/2+P5cNpM
+07R7fLf3vcueJEmSJEmS5NKNqpvk/xpVN0mSJNdtrnvP6DtHMde9hyRJkiRJ
+kiQ5hlF1kyRJLs1c9x6SJEmSJEmS8xtVN0mSJEmSJEmSJEmSJPlLc917SPJf
+jKqbJDm9rHsPSZIkSZIkSZIkSZIkyfdG1U2SJFmZ695DkiRJkiQ5urnuPaOY
+695DcjnmuveQJEmSJJdlVN0kSZJch7nuPd/+z+omSZKfG1U3SZKc36i6SfLp
+FU8W5gI=
+        "], {{0, 0}, {51, 51}}, {0, 1}],
+       Frame->Automatic,
+       FrameLabel->{None, None},
+       FrameTicks->{{None, None}, {None, None}},
+       GridLinesStyle->Directive[
+         GrayLevel[0.5, 0.4]],
+       Method->{
+        "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+         Automatic}], {194.4, -189.}, 
+      ImageScaled[{0.5, 0.5}], {360.00000000000006, 360.}], InsetBox[
+      GraphicsBox[RasterBox[CompressedData["
+1:eJztlu3NFDEMhE+iEmqgAHqgBCR+0zolICQiscvlzdc4M96MJTTsg3G8G2dy
+n7///Pbj0+v1+vL3z5+/X+PX1/+QOZCX57uO5p+q99hVP3pdK0ZLqJz3LDz6
+e6L2kT1f2f3NmkNLqPjDUzlrv1Tmq7fv7OtaOVpC5byfxkf35SnncbT/0fzo
+OlYtLaFyrp/KZ/1qNZ+t98hW35pDS6ic9yyc7Uu1yOJvo740yrOsa8VoCRV/
+UOOouuh6q76H9tVof6jx1fdlr2vFaAkV33gqR/nbaB22X0Wfd9a61hxaQsUH
+WDz6+8z6TK0u6/zW6qPWHa2P4vbDHFqCPS+n8lpeK5/lA9G+Zx+zzmgJ9ryY
+v3/u3a9d567VdxRH9cPyYWuslmDPqXkf33Uea1xNs/dvxWgJlXNqfn3u3S/2
+HKn5DGtdK1drsXq+zLl817me7a93XVZ9VL6VoyVUzqP59Xl1v9jvg/JJq/Uj
+LcGed/M+HrX/q/VRdazWGS2hck7N93D23GX1w3tfrT5H860fawmVc2SO5ap+
+0lvn/u+78kfrsL+n9fVhqJxH8z189nyh8mux2+ej66Pel+0bKlpC5RyZYznq
+XmP5W+/62TjqnLL9Q0VLjPqa/TA3R/tSFN+1jjqP9jdUHTUfMz+To/yE5WOe
+8+vz6VrCc/JMrtLHLGevr86jz7uajvY/mm/f0+S9+8Pqr/Xvnqs5zvYbFS3h
+ucrBVfqY5ez1n8ZR94X1dQmV/c3Ce78rq79dnL3+0zjbD1T8B+VX9r3r8+r3
+V3mfWc5e/xSOnjd1rb0Xij/Vx9j3QitPlbPXfxqP9gG2P0X1X8uP5mr9sHgr
+r/Wdovtr9bN7/VP56Dyg6qj5Empdcyxn9THaz66+zN/z6N8/T9USKvtofn1e
+vU9b9Wuh8h1O47P7eLqWUNlH8+tz1H7Zx3Jxtk+oawmV/TqN9+5Pq26rfm++
++RxHnS/UPKz6wWod+5L5v8/e9xx8l4+doiWivrP5Hu77Lhdv5bX2oZXfWnd2
+/1freN7MZ3gtr5XvuYrlaN8YzVevc/9/rTq1fPNncN+bc5x1Tmf7HO1ndr3V
++vYx8xk+Oye1WM1ncdR5YZ0jtA+g+vM9aI7kqDnJPofZ+6/xaP/ZtS6qn6z7
+aL6Hq81VtD+j+lTrZ9Q3ZvNn741W/d73MNfm0b8r1Oqcxtk+VguUH/b6WO86
+5ubm53H076jV31e+78x7+OiceK6ewdG/l3Zr73uY5+Ted/MIvtufWuuO9m9+
+ffb3NGfy6Dmc9ZlaRPlha33z93z0e6rlm5tHcJQv2ce4HOU/3kdzZd7KW51b
+z78m9z1l/iTO8ivPOZajvqfvKfOMvJaHquM5n+PRvuR7x1yZs+Y/us5pPNpn
+7G/myjx6Plt9zOtvcs/xrA==
+        "], {{0, 0}, {51, 51}}, {0, 1}],
+       Frame->Automatic,
+       FrameLabel->{None, None},
+       FrameTicks->{{None, None}, {None, None}},
+       GridLinesStyle->Directive[
+         GrayLevel[0.5, 0.4]],
+       Method->{
+        "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+         Automatic}], {583.2, -189.}, 
+      ImageScaled[{0.5, 0.5}], {360.00000000000006, 360.}], InsetBox[
+      GraphicsBox[RasterBox[CompressedData["
+1:eJzt1tFtwyAUBVBLnaQzdIDu0BEq9burd4SqUv1RV8jGvGdwOEgRyQnBDwWu
+eH7/fPt4Wpbl5ff18/5v+3r9R5xf5uvnUl/6fe34Wo+aP3tds/drG2U/8zm9
+df9m19fqvXKsdvxd++36to3zK3yUOkbx6POdNf8o/XZ928b5GR/1nO7VPbvf
+tT+6Ps4zvTSudvysnp3/o/fbdZTWx3mmj1LHXX32fm29/wc+h49SR6vvnaer
+6yn50fMelRtyjM/so9QR7aXvz46Pys+svDpbvxzjPf3sfr6qvqs9KmeOetR8
+2bkhx/gjees+3Xve3nNb59mbP+t8ZefY2Xqy1yvHeE/vlT+196Ws5zyKu49x
+Ps4+i6onuq7ZvTaX5Bi/o7tfcc5H86h7jhzjnHPOOeecc84555xzzjnnnHPO
+Oeecc84555xzzjnnnHPOeS8vjetVD+ecR7l845xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeect/s3OAgb+A==
+        "], {{0, 0}, {51, 51}}, {0, 1}],
+       Frame->Automatic,
+       FrameLabel->{None, None},
+       FrameTicks->{{None, None}, {None, None}},
+       GridLinesStyle->Directive[
+         GrayLevel[0.5, 0.4]],
+       Method->{
+        "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+         Automatic}], {972., -189.}, ImageScaled[{0.5, 0.5}], {360., 360.}], 
+     InsetBox[
+      GraphicsBox[RasterBox[CompressedData["
+1:eJzt1sEJgDAMAMCAkziDA7iDIwi+Xd0RRPCjJSgq6uMCpeEIKf2E1P3YDVVE
+NOtZ8m1MbUGc85N+VLe/r/a/24dzzjPP6t5613zjnH81957a07L4y38555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xzzjnnnHPOOeecc84555xz
+zjnnvPQZZroSyQ==
+        "], {{0, 0}, {51, 51}}, {0, 1}],
+       Frame->Automatic,
+       FrameLabel->{None, None},
+       FrameTicks->{{None, None}, {None, None}},
+       GridLinesStyle->Directive[
+         GrayLevel[0.5, 0.4]],
+       Method->{
+        "DefaultBoundaryStyle" -> Automatic, "DefaultPlotStyle" -> 
+         Automatic}], {1360.8000000000002, -189.}, 
+      ImageScaled[{0.5, 0.5}], {359.9999999999998, 360.}]}}, {}},
+  ContentSelectable->True,
+  ImageSize->Large,
+  PlotRangePadding->{6, 5}]], "Output",
+ CellChangeTimes->{{3.7022996033843513`*^9, 3.7022996122688704`*^9}, {
+   3.7023125490711317`*^9, 3.702312584041503*^9}, {3.7023189087990503`*^9, 
+   3.7023189186102395`*^9}, {3.7023199117217245`*^9, 
+   3.7023199434665794`*^9}, {3.7023199775537767`*^9, 3.702320022138399*^9}, 
+   3.7023230731856465`*^9, {3.7023274775956335`*^9, 3.7023275077393336`*^9}, 
+   3.702328498927661*^9, {3.7023808215341053`*^9, 3.702380891144529*^9}, {
+   3.702381811429572*^9, 3.7023818187475705`*^9}, {3.702382012523608*^9, 
+   3.7023820323566213`*^9}, {3.702382171534941*^9, 3.702382187997574*^9}, 
+   3.702382480877884*^9},ExpressionUUID->"1cd89d9d-e29e-4e8e-aa99-\
+c225d6f7b69e"]
+}, Open  ]]
+},
+WindowSize->{736, 751},
+WindowMargins->{{34, Automatic}, {113, Automatic}},
+FrontEndVersion->"11.1 for Microsoft Windows (64-bit) (March 13, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1792, 40, 145, "Input", "ExpressionUUID" -> \
+"36e6128a-656e-442a-9415-0a3ba0ffa6c8"],
+Cell[2375, 64, 76319, 1266, 455, "Output", "ExpressionUUID" -> \
+"85a84ba5-fba0-4b5a-b2cd-9f1a0502996e"],
+Cell[78697, 1332, 5240, 104, 162, "Output", "ExpressionUUID" -> \
+"1cd89d9d-e29e-4e8e-aa99-c225d6f7b69e"]
+}, Open  ]]
+}
+]
+*)
+
